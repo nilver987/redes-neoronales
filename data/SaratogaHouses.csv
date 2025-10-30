@@ -1,0 +1,93 @@
+price	livingArea	lotSize	age	bedrooms	bathrooms	rooms	waterfront	heating	newConstruction	centralAir
+128500	1060	0.09	42	3	1	6	No	electric	No	No
+145000	1221	0.11	58	3	1	7	No	hot air	No	No
+147500	1424	0.18	4	3	1.5	7	No	hot air	Yes	No
+152000	1314	0.12	33	3	1	6	No	hot air	No	Yes
+160000	1672	0.15	20	3	1.5	7	No	hot air	No	Yes
+170000	1820	0.2	10	3	2	8	No	hot air	Yes	Yes
+175000	1900	0.18	15	3	2	8	No	hot water	No	Yes
+180000	2100	0.25	5	4	2.5	9	No	hot air	Yes	Yes
+185000	1550	0.14	25	3	1.5	7	No	electric	No	No
+190000	2200	0.3	8	4	2.5	9	No	hot air	Yes	Yes
+195000	1800	0.16	18	3	2	8	No	hot water	No	Yes
+200000	2400	0.35	12	4	3	10	No	hot air	Yes	Yes
+205000	1650	0.13	30	3	1.5	7	No	hot air	No	No
+210000	2500	0.4	6	4	3	10	No	hot air	Yes	Yes
+215000	1950	0.2	22	3	2	8	No	hot water	No	Yes
+220000	2600	0.45	9	4	3	11	No	hot air	Yes	Yes
+225000	1750	0.15	28	3	1.5	7	No	electric	No	No
+230000	2700	0.5	7	5	3.5	12	No	hot air	Yes	Yes
+235000	1850	0.17	20	3	2	8	No	hot water	No	Yes
+240000	2800	0.55	10	5	3.5	12	No	hot air	Yes	Yes
+245000	2000	0.22	25	4	2.5	9	No	hot air	No	Yes
+250000	2900	0.6	8	5	4	13	No	hot air	Yes	Yes
+255000	2100	0.25	18	4	2.5	9	No	hot water	No	Yes
+260000	3000	0.65	11	5	4	13	No	hot air	Yes	Yes
+265000	2200	0.28	30	4	2.5	9	No	electric	No	No
+270000	3100	0.7	9	5	4	14	No	hot air	Yes	Yes
+275000	2300	0.3	22	4	3	10	No	hot water	No	Yes
+280000	3200	0.75	12	5	4	14	No	hot air	Yes	Yes
+285000	2400	0.32	26	4	3	10	No	hot air	No	Yes
+290000	3300	0.8	10	5	4.5	15	No	hot air	Yes	Yes
+295000	2500	0.35	20	4	3	10	No	hot water	No	Yes
+300000	3400	0.85	13	5	4.5	15	No	hot air	Yes	Yes
+305000	2600	0.38	28	4	3	10	No	electric	No	No
+310000	3500	0.9	11	5	4.5	16	No	hot air	Yes	Yes
+315000	2700	0.4	24	4	3.5	11	No	hot water	No	Yes
+320000	3600	0.95	14	5	4.5	16	No	hot air	Yes	Yes
+325000	2800	0.42	30	4	3.5	11	No	hot air	No	Yes
+330000	3700	1	12	5	5	17	No	hot air	Yes	Yes
+335000	2900	0.45	25	4	3.5	11	No	hot water	No	Yes
+340000	3800	1.05	15	5	5	17	No	hot air	Yes	Yes
+345000	3000	0.48	29	4	3.5	11	No	electric	No	No
+350000	3900	1.1	13	5	5	18	No	hot air	Yes	Yes
+355000	3100	0.5	26	4	4	12	No	hot water	No	Yes
+360000	4000	1.15	16	5	5	18	No	hot air	Yes	Yes
+365000	3200	0.52	30	4	4	12	No	hot air	No	Yes
+370000	4100	1.2	14	5	5.5	19	No	hot air	Yes	Yes
+375000	3300	0.55	27	4	4	12	No	hot water	No	Yes
+380000	4200	1.25	17	5	5.5	19	No	hot air	Yes	Yes
+385000	3400	0.58	31	4	4	12	No	electric	No	No
+390000	4300	1.3	15	5	5.5	20	No	hot air	Yes	Yes
+395000	3500	0.6	28	4	4.5	13	No	hot water	No	Yes
+400000	4400	1.35	18	5	5.5	20	No	hot air	Yes	Yes
+405000	3600	0.62	30	4	4.5	13	No	hot air	No	Yes
+410000	4500	1.4	16	5	6	21	No	hot air	Yes	Yes
+415000	3700	0.65	29	4	4.5	13	No	hot water	No	Yes
+420000	4600	1.45	19	5	6	21	No	hot air	Yes	Yes
+425000	3800	0.68	31	4	4.5	13	No	electric	No	No
+430000	4700	1.5	17	5	6	22	No	hot air	Yes	Yes
+435000	3900	0.7	30	4	5	14	No	hot water	No	Yes
+440000	4800	1.55	20	5	6	22	No	hot air	Yes	Yes
+445000	4000	0.72	31	4	5	14	No	hot air	No	Yes
+450000	4900	1.6	18	5	6.5	23	No	hot air	Yes	Yes
+455000	4100	0.75	30	4	5	14	No	hot water	No	Yes
+460000	5000	1.65	21	5	6.5	23	No	hot air	Yes	Yes
+465000	4200	0.78	31	4	5	14	No	electric	No	No
+470000	5100	1.7	19	5	6.5	24	No	hot air	Yes	Yes
+475000	4300	0.8	30	4	5.5	15	No	hot water	No	Yes
+480000	5200	1.75	22	5	6.5	24	No	hot air	Yes	Yes
+485000	4400	0.82	31	4	5.5	15	No	hot air	No	Yes
+490000	5300	1.8	20	5	7	25	No	hot air	Yes	Yes
+495000	4500	0.85	30	4	5.5	15	No	hot water	No	Yes
+500000	5400	1.85	23	5	7	25	No	hot air	Yes	Yes
+505000	4600	0.88	31	4	5.5	15	No	electric	No	No
+510000	5500	1.9	21	5	7	26	No	hot air	Yes	Yes
+515000	4700	0.9	30	4	6	16	No	hot water	No	Yes
+520000	5600	1.95	24	5	7	26	No	hot air	Yes	Yes
+525000	4800	0.92	31	4	6	16	No	hot air	No	Yes
+530000	5700	2	22	5	7.5	27	No	hot air	Yes	Yes
+535000	4900	0.95	30	4	6	16	No	hot water	No	Yes
+540000	5800	2.05	25	5	7.5	27	No	hot air	Yes	Yes
+545000	5000	0.98	31	4	6	16	No	electric	No	No
+550000	5900	2.1	23	5	7.5	28	No	hot air	Yes	Yes
+555000	5100	1	30	4	6.5	17	No	hot water	No	Yes
+560000	6000	2.15	26	5	7.5	28	No	hot air	Yes	Yes
+565000	5200	1.02	31	4	6.5	17	No	hot air	No	Yes
+570000	6100	2.2	24	5	8	29	No	hot air	Yes	Yes
+575000	5300	1.05	30	4	6.5	17	No	hot water	No	Yes
+580000	6200	2.25	27	5	8	29	No	hot air	Yes	Yes
+585000	5400	1.08	31	4	6.5	17	No	electric	No	No
+590000	6300	2.3	25	5	8	30	No	hot air	Yes	Yes
+595000	5500	1.1	30	4	7	18	No	hot water	No	Yes
+600000	6400	2.35	28	5	8	30	No	hot air	Yes	Yes

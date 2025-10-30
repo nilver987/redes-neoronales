@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saratoga Premium AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Saratoga Premium AI</h1>
+      <p>Clasificador Inteligente de Propiedades</p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" onclick="switchTab('train')"><i class="fas fa-brain"></i> Entrenamiento</button>
+      <button class="tab-btn" onclick="switchTab('analyze')"><i class="fas fa-search-dollar"></i> Análisis</button>
+      <button class="tab-btn" onclick="switchTab('model')"><i class="fas fa-cogs"></i> Modelo</button>
+    </nav>
+
+    <!-- Entrenamiento -->
+    <div id="train-tab" class="tab-content active">
+      <div class="card">
+        <h2><i class="fas fa-upload"></i> Subir Dataset</h2>
+        <input type="file" id="fileInput" accept=".csv,.xlsx" class="file-input">
+        <button onclick="uploadData()" class="btn primary"><i class="fas fa-play"></i> Entrenar Modelo</button>
+        <div id="trainStatus" class="status"></div>
+      </div>
+    </div>
+
+    <!-- Análisis -->
+    <div id="analyze-tab" class="tab-content">
+      <div class="card">
+        <h2><i class="fas fa-home"></i> Analizar Propiedad</h2>
+        <form id="analyzeForm">
+          <div class="form-grid">
+            <div class="input-group"><label>Área habitable (sq ft)</label><input type="number" name="livingArea" value="1800" min="500" required></div>
+            <div class="input-group"><label>Tamaño del lote (acres)</label><input type="number" name="lotSize" step="0.01" value="0.5" min="0.01" required></div>
+            <div class="input-group"><label>Edad (años)</label><input type="number" name="age" value="15" min="0" max="200" required></div>
+            <div class="input-group"><label>Dormitorios</label><input type="number" name="bedrooms" value="3" min="1" max="10" required></div>
+            <div class="input-group"><label>Baños</label><input type="number" name="bathrooms" step="0.5" value="2.5" min="1" max="10" required></div>
+            <div class="input-group"><label>Habitaciones</label><input type="number" name="rooms" value="8" min="3" max="20" required></div>
+            <div class="input-group"><label>Frente al agua</label><select name="waterfront"><option>No</option><option>Yes</option></select></div>
+            <div class="input-group"><label>Calefacción</label><select name="heating"><option>hot air</option><option>hot water</option><option>electric</option></select></div>
+            <div class="input-group"><label>Nueva construcción</label><select name="newConstruction"><option>No</option><option>Yes</option></select></div>
+            <div class="input-group"><label>Aire central</label><select name="centralAir"><option>No</option><option>Yes</option></select></div>
+          </div>
+          <button type="submit" class="btn success"><i class="fas fa-magic"></i> Analizar y Recomendar</button>
+        </form>
+
+        <div id="analysisResult" class="result-card" style="display:none;">
+          <div class="spinner" id="spinner">Analizando...</div>
+          <div id="resultContent" style="display:none;">
+            <h3 id="resultTitle"></h3>
+            <p><strong>Confianza:</strong> <span id="resultConfidence"></span></p>
+            <p id="resultRecommendation"></p>
+            <p><strong>Precio estimado:</strong> <span id="resultPrice"></span></p>
+            <p><strong>Umbral Premium:</strong> <span id="resultThreshold"></span></p>
+            <button onclick="editAgain()" class="btn secondary"><i class="fas fa-edit"></i> Editar y volver a analizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo -->
+    <div id="model-tab" class="tab-content">
+      <div class="card">
+        <h2><i class="fas fa-layer-group"></i> Configurar Modelo</h2>
+        <button onclick="openModelModal()" class="btn secondary"><i class="fas fa-plus"></i> Cambiar Modelo</button>
+        <div id="modelStatus" class="status"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modelModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModelModal()">×</span>
+      <h2>Cambiar Modelo</h2>
+      <form id="modelForm">
+        <select id="modelType">
+          <option value="mlp">Red Neuronal (MLP)</option>
+          <option value="rf">Random Forest</option>
+        </select>
+        <button type="submit" class="btn primary">Aplicar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
